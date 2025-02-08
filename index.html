@@ -102,6 +102,7 @@
             background-color: rgba(0, 0, 0, 0.7);
             border-radius: 12px;
             font-size: 13px;
+            animation: animated-border 2s infinite alternate;
         }
 
         .special-item h3 {
@@ -129,6 +130,19 @@
             color: white;
         }
 
+        /* Animated Border Animation */
+        @keyframes animated-border {
+            0% {
+                border-color: #ff66cc;
+            }
+            50% {
+                border-color: #fff;
+            }
+            100% {
+                border-color: #ff66cc;
+            }
+        }
+
         /* Products Section - White Borders Around All Products */
         .product-item {
             border: 2px solid white;
@@ -137,6 +151,7 @@
             background-color: rgba(0, 0, 0, 0.7);
             border-radius: 12px;
             font-size: 13px;
+            animation: animated-border 2s infinite alternate;
         }
 
         .product-item h4 {
