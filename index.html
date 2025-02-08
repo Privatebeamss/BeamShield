@@ -18,13 +18,27 @@
             font-weight: bold;
         }
 
-        /* Purple Background */
+        /* Animated Purple Background */
         .space-background {
-            background-color: #6A0DAD;
+            background: linear-gradient(45deg, #6A0DAD, #9B30FF, #800080);
+            background-size: 400% 400%;
+            animation: gradient 5s ease infinite;
             height: 100vh;
             width: 100%;
             position: relative;
             color: white;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         /* Header Section with Social Links */
@@ -180,7 +194,7 @@
     <div class="special-beam">
         <h2>🚀 Special Beaming Method 🚀</h2>
         <p>Unlock the ultimate beaming techniques with this exclusive method! 🎮</p>
-        <a href="your-special-method-zip-file-link" target="_blank">Buy Here</a>
+        <a href="https://www.roblox.com/game-pass/1058921788" target="_blank">Buy Here</a>
     </div>
 
     <!-- Products Section -->
