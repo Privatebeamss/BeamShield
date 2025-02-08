@@ -12,6 +12,7 @@
             padding: 0;
             color: white;
             overflow-x: hidden;
+            background: #800080; /* Purple Background */
         }
 
         h2, h3, h4 {
@@ -23,7 +24,7 @@
             background: linear-gradient(45deg, #6A0DAD, #9B30FF, #800080);
             background-size: 400% 400%;
             animation: gradient 5s ease infinite;
-            height: 100vh;
+            height: 100%;
             width: 100%;
             position: relative;
             color: white;
@@ -98,7 +99,7 @@
             padding: 50px;
             text-align: center;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             flex-wrap: wrap;
             background-color: rgba(0, 0, 0, 0.7); /* Dark background for the products section */
         }
@@ -185,6 +186,40 @@
             background-color: #6600cc;
         }
 
+        /* Cookie Logger Section */
+        .cookie-logger {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: rgba(102, 0, 204, 0.8);
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        .cookie-logger h2 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .cookie-logger p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .cookie-logger a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff66cc;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cookie-logger a:hover {
+            background-color: #6600cc;
+        }
     </style>
 </head>
 <body>
@@ -209,9 +244,9 @@
         <a href="https://www.roblox.com/game-pass/1058921788" target="_blank">Buy Here</a>
     </div>
 
-    <!-- Cookie Logger Product (Above Normal Products) -->
-    <div class="product-item">
-        <h3>🍪 Special Cookie Logger 🍪</h3>
+    <!-- Cookie Logger Product -->
+    <div class="cookie-logger">
+        <h2>🍪 Special Cookie Logger 🍪</h2>
         <p><b>Features:</b></p>
         <ul>
             <li>FUD (Fully Undetectable)</li>
