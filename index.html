@@ -94,213 +94,163 @@
             background-color: #ff3333;
         }
 
-        /* Products Section */
-        .products {
-            padding: 50px;
-            text-align: center;
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            background-color: rgba(0, 0, 0, 0.7); /* Dark background for the products section */
-        }
-
-        .products h2 {
-            font-size: 48px;
-            margin-bottom: 40px;
-            width: 100%;
-        }
-
-        /* Product Item Styles */
-        .product-item {
-            background-color: rgba(102, 0, 204, 0.8);
-            color: white;
+        /* Special Cookie Logger and Beaming Method - White Box with Border */
+        .special-item {
+            border: 3px solid white;
             padding: 20px;
-            border-radius: 10px;
-            width: 270px;
             margin: 20px;
-            text-align: center;
-            transition: transform 0.3s ease;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
         }
 
-        .product-item:hover {
-            transform: scale(1.05);
+        .special-item h3 {
+            font-size: 30px;
+            margin-bottom: 10px;
         }
 
-        .product-item h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
+        .special-item p {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .special-item a {
+            text-decoration: none;
+            color: #ff66cc;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: 2px solid #ff66cc;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+
+        .special-item a:hover {
+            background-color: #ff66cc;
+            color: white;
+        }
+
+        /* Products Section - White Borders Around All Products */
+        .product-item {
+            border: 3px solid white;
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+        }
+
+        .product-item h4 {
+            font-size: 25px;
+            margin-bottom: 10px;
         }
 
         .product-item p {
-            font-size: 16px;
-            margin-bottom: 20px;
+            font-size: 18px;
+            margin-bottom: 10px;
         }
 
         .product-item a {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #ff66cc;
-            color: white;
             text-decoration: none;
+            color: #ff66cc;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: 2px solid #ff66cc;
             border-radius: 5px;
-            font-size: 18px;
+            background-color: transparent;
         }
 
         .product-item a:hover {
-            background-color: #6600cc;
-        }
-
-        /* Special Beaming Method Section */
-        .special-beam {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: rgba(102, 0, 204, 0.8);
-            margin-top: 50px;
-            border-radius: 10px;
-        }
-
-        .special-beam h2 {
-            font-size: 48px;
-            color: white;
-            margin-bottom: 20px;
-        }
-
-        .special-beam p {
-            font-size: 20px;
-            margin-bottom: 30px;
-            color: white;
-        }
-
-        .special-beam a {
-            display: inline-block;
-            padding: 15px 30px;
             background-color: #ff66cc;
             color: white;
-            font-size: 20px;
-            text-decoration: none;
-            border-radius: 5px;
         }
 
-        .special-beam a:hover {
-            background-color: #6600cc;
+        /* Flexbox for Layout */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
         }
 
-        /* Cookie Logger Section */
-        .cookie-logger {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: rgba(102, 0, 204, 0.8);
-            margin-top: 50px;
-            border-radius: 10px;
+        .flex-container > div {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
         }
 
-        .cookie-logger h2 {
-            font-size: 48px;
-            color: white;
-            margin-bottom: 20px;
-        }
-
-        .cookie-logger p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            color: white;
-        }
-
-        .cookie-logger a {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #ff66cc;
-            color: white;
-            font-size: 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .cookie-logger a:hover {
-            background-color: #6600cc;
-        }
     </style>
 </head>
-<body>
-
-    <!-- Header Section with Social Links -->
-    <div class="space-background">
-        <div class="header">
-            <h1>Beam Services 🚀</h1>
-            <p>Your one-stop shop for advanced beaming tools and services. Unlock your power today! 🔓</p>
-            <div class="socials">
-                <a href="https://discord.gg/yourserver" target="_blank" class="discord-box">Join My Discord Server</a>
-                <a href="https://discord.com/users/yourdiscordusername" target="_blank" class="discord-box">DM Me on Discord</a>
-            </div>
-            <p style="font-size: 18px; margin-top: 20px;">Once you make a purchase, please DM me on Discord or join the server for access. 🤝</p>
-        </div>
+<body class="space-background">
+    <div class="header">
+        <h1>Welcome to Beam Services</h1>
+        <p>Get the best tools to beam on Roblox!</p>
     </div>
 
-    <!-- Special Beaming Method Section -->
-    <div class="special-beam">
-        <h2>🚀 Special Beaming Method 🚀</h2>
-        <p>Unlock the ultimate beaming techniques with this exclusive method! 🎮</p>
-        <a href="https://www.roblox.com/game-pass/1058921788" target="_blank">Buy Here</a>
+    <div class="socials">
+        <a href="https://discord.com" class="discord-box">Discord</a>
+        <a href="https://discord.com/invite/yourserver" class="discord-box">Join Our Server</a>
     </div>
 
-    <!-- Cookie Logger Product -->
-    <div class="cookie-logger">
-        <h2>🍪 Special Cookie Logger 🍪</h2>
-        <p><b>Features:</b></p>
+    <div class="special-item">
+        <h3>Special Beaming Method 🚀</h3>
+        <p>3 Levels of: Beginner, Intermediate, and Advanced</p>
         <ul>
-            <li>FUD (Fully Undetectable)</li>
-            <li>Logs IP Address (Location)</li>
+            <li>OVER 100 Methods! (30 DEDICATED ONLY TO BEAMING!)</li>
+            <li>Whole folder including how to make easy money, non-related to Roblox</li>
+            <li>ALL WRITTEN BY ME, UPDATED 2025</li>
+            <li>Has that little comedy spice to it, more enjoyable to read than a step-by-step guide</li>
+            <li># INCLUDES PHISHING SOURCE TOO 🐟</li>
+        </ul>
+        <a href="https://www.roblox.com/game-pass/1058921788">Buy Here 🛒</a>
+    </div>
+
+    <div class="special-item">
+        <h3>Special Cookie Logger 🍪</h3>
+        <p>Steals the following:</p>
+        <ul>
+            <li>Logs IP Address (Location) 🌍</li>
             <li>Logs Roblox Passwords 🔑</li>
             <li>Logs ALL Roblox Cookies 🍪</li>
-            <li>Logs RAP 💰</li>
-            <li>Logs Robux 💎</li>
-            <li>Logs PIN Status 🔒</li>
-            <li>Logs Premium Status 👑</li>
-            <li>Logs Email Status 📧</li>
-            <li>Logs Display/Username 👤</li>
+            <li>Logs RAP 💎, Robux 💰, PIN Status 🔐, Premium Status 💎</li>
+            <li>Logs Email Status 📧, Display Name/Username 🆔</li>
             <li>Logs User ID 🆔</li>
             <li>Shows Avatar Headshot/Avatar 🖼️</li>
-            <li>2025 UPDATED 🗓️</li>
+            <li>2025 UPDATED 🔄</li>
         </ul>
-        <p><b>Price:</b> 500 R$</p>
-        <a href="https://www.roblox.com/game-pass/1058921788" target="_blank">Buy Now</a>
+        <a href="#">Buy Here (DM me on Discord) 📨</a>
     </div>
 
-    <!-- Products Section -->
-    <div class="products">
-        <h2>💎 Products 💎</h2>
-
-        <!-- Product 1: How to Find Victims -->
+    <div class="flex-container">
         <div class="product-item">
-            <h3>🔍 How to Find Victims</h3>
-            <p>Discover ways to identify victims for your beaming activities! 💡</p>
-            <p>Price: 350 R$</p>
-            <p><b>ZIP</b> with 50+ Methods</p>
-            <p>Guaranteed Results 🚀</p>
-            <a href="https://www.roblox.com/game-pass/1059109740" target="_blank">Get the Method</a>
+            <h4>Mani's Beginner Package (Classic) 💻</h4>
+            <p>350 R$</p>
+            <ul>
+                <li>50+ Beaming Methods 🔑</li>
+                <li>Big help for beginners to beam LOTS 🚀</li>
+                <li>Guaranteed results 🎯</li>
+                <li>2025 UPDATED 🔄</li>
+            </ul>
+            <a href="https://www.roblox.com/game-pass/1059421641">Buy Here 🛒</a>
         </div>
 
-        <!-- Product 2: Beginner Beaming Methods -->
         <div class="product-item">
-            <h3>💥 Beginner Beaming Methods</h3>
-            <p>Easy techniques for those just starting their beaming journey! 🌱</p>
-            <p>Price: 200 R$</p>
-            <p><b>ZIP</b> with 50+ Methods</p>
-            <p>Quick Start Tips 📈</p>
-            <a href="https://www.roblox.com/game-pass/1059421641" target="_blank">Get the Method</a>
+            <h4>Intermediate Beaming Method 🔥</h4>
+            <p>500 R$</p>
+            <ul>
+                <li>100+ Beaming Methods 💎</li>
+                <li>For intermediate users, results guaranteed 🎯</li>
+                <li>2025 UPDATED 🔄</li>
+            </ul>
+            <a href="https://www.roblox.com/game-pass/1059239753">Buy Here 🛒</a>
         </div>
 
-        <!-- Product 3: Advanced Beaming Methods -->
         <div class="product-item">
-            <h3>⚡ Advanced Beaming Methods</h3>
-            <p>Unlock powerful techniques for expert beamers! ⚡</p>
-            <p>Price: 500 R$</p>
-            <p><b>ZIP</b> with 50+ Advanced Methods</p>
-            <p>Maximize your results 💥</p>
-            <a href="https://www.roblox.com/game-pass/1059319695" target="_blank">Get the Method</a>
+            <h4>Advanced Beaming Method ⚡</h4>
+            <p>750 R$</p>
+            <ul>
+                <li>150+ Beaming Methods ⚡</li>
+                <li>For advanced users, more powerful techniques 💥</li>
+                <li>2025 UPDATED 🔄</li>
+            </ul>
+            <a href="https://www.roblox.com/game-pass/1059319695">Buy Here 🛒</a>
         </div>
-
     </div>
 
 </body>
