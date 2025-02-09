@@ -13,6 +13,7 @@
             color: white;
             overflow-x: hidden;
             background: #800080; /* Purple Background */
+            scroll-behavior: smooth; /* Smooth Scroll */
         }
 
         h2, h3, h4 {
@@ -66,6 +67,10 @@
             color: red;
             font-weight: bold;
             margin-top: 20px;
+            padding: 10px;
+            border: 2px solid red;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
         }
 
         /* Social Media Links */
@@ -152,7 +157,14 @@
             }
         }
 
-        /* Products Section - White Borders Around All Products */
+        /* Products Section - Grid Layout */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
         .product-item {
             border: 2px solid white;
             padding: 8px;
@@ -186,19 +198,6 @@
         .product-item a:hover {
             background-color: #ff66cc;
             color: white;
-        }
-
-        /* Flexbox for Layout */
-        .flex-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .flex-container > div {
-            flex: 1;
-            min-width: 220px;
-            margin: 10px;
         }
 
     </style>
@@ -257,7 +256,8 @@
         <a href="#">Buy Here (DM me on Discord) 📨</a>
     </div>
 
-    <div class="flex-container">
+    <!-- Products Section -->
+    <div class="product-container">
         <div class="product-item">
             <h4>Beginner Beaming Method 💻</h4>
             <p>350 R$</p>
